@@ -6,7 +6,7 @@ L.AngularControl = L.Control.extend({
     },
     onAdd: function (map) {
         var container = L.DomUtil.create('div', 'leaflet-angular');
-        var $injector = angular.injector(['ng'].concat(this.options.modules));
+        var $injector = angular.element(document.querySelector('.ng-scope')).injector();
         var $rootScope = $injector.get('$rootScope'),
             $compile = $injector.get('$compile'),
             $controller = $injector.get('$controller');
@@ -34,7 +34,6 @@ L.AngularControl = L.Control.extend({
         }
 
         link(scope);
-        scope.$apply();
         return container;
     }
 });
