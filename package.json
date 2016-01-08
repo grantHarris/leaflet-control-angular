@@ -1,7 +1,7 @@
 {
-   "name": "L.AngularControl",
+   "name": "leaflet-angular-control",
    "label": {
-      "en": "L.AngularControl"
+      "en": "leaflet-angular-control"
    },
    "language": "JavaScript",
    "version": "0.0.1",
