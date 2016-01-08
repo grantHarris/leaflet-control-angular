@@ -1,0 +1,30 @@
+{
+   "name": "L.AngularControl",
+   "label": {
+      "en": "L.AngularControl"
+   },
+   "language": "JavaScript",
+   "version": "0.0.1",
+   "description": "Allows for the use of AngularJS as custom leaflet controls",
+   "repository": {
+      "type": "git",
+      "url": "git@github.com:grantHarris/L.AngularControl.git"
+   },
+   "license": "",
+   "keywords": [
+      "gis",
+      "map",
+      "angular",
+      "leaflet"
+   ],
+   "main": "dist/l.angular.control.min.js",
+   "dependencies": {
+      "leaflet": "*"
+   },
+   "repository": {
+      "type": "git",
+      "url": "https://github.com/grantHarris/L.AngularControl"
+   },
+   "devDependencies": {
+   }
+}
