@@ -1,11 +1,10 @@
 L.AngularControl = L.Control.extend({
     options: {
         position: 'bottomleft',
-        template: '',
-        modules:[]
+        template: ''
     },
     onAdd: function (map) {
-        var container = L.DomUtil.create('div', 'leaflet-angular');
+        var container = L.DomUtil.create('div', 'angular-control-leaflet');
         var $injector = angular.element(document.querySelector('.ng-scope')).injector();
         var $rootScope = $injector.get('$rootScope'),
             $compile = $injector.get('$compile'),
