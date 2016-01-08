@@ -17,9 +17,10 @@
       "angular",
       "leaflet"
    ],
-   "main": "dist/l.angular.control.min.js",
+   "main": "src/L.AngularControl.js",
    "dependencies": {
-      "leaflet": "*"
+      "leaflet": "*",
+      "angular": "*"
    },
    "repository": {
       "type": "git",
