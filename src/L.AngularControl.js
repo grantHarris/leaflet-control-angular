@@ -23,6 +23,7 @@
 
              var link = $compile(element);
 
+             // Controller setup based on ui-router's code https://github.com/angular-ui/ui-router
              if (that.options.controller) {
                  var controller = $controller(that.options.controller, {
                      '$map': map,
