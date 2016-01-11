@@ -14,4 +14,4 @@ This plugin currently only supports string templates. Support for function templ
 
 ## License
 
-Leaflet Angular Control is released under the MIT license.
+Leaflet Angular Control is released under the MIT License.
