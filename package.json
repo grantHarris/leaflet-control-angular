@@ -10,7 +10,7 @@
       "type": "git",
       "url": "git@github.com:grantHarris/L.AngularControl.git"
    },
-   "license": "",
+   "license": "MIT",
    "keywords": [
       "gis",
       "map",
