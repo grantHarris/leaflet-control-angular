@@ -1,5 +1,5 @@
  'use strict';
- 
+
  L.AngularControl = L.Control.extend({
     options: {
          position: 'bottomleft',
@@ -10,7 +10,7 @@
          var container = L.DomUtil.create('div', 'angular-control-leaflet');
          angular.element(document).ready(function() {
              // Grab the injector for the current angular app
-             var $injector = angular.element(document.querySelector('[ng-app]')).injector();
+             var $injector = angular.element(document).injector();
 
              var $rootScope = $injector.get('$rootScope'),
                  $compile = $injector.get('$compile'),
