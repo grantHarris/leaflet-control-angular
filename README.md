@@ -5,7 +5,7 @@ Leaflet Angular Control allows the insertion of Angularized HTML code into your 
 
 ## Examples
 
-See the `examples` directory.
+Working [example](http://grantharris.github.io/L.AngularControl/examples/example.html). Also see the `examples` directory.
 
 ## TODO
 
