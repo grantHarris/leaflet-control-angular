@@ -7,6 +7,10 @@ Leaflet Angular Control allows the insertion of Angularized HTML code into your 
 
 See the `examples` directory.
 
+## TODO
+
+This plugin currently only supports string templates. Support for function templates, and templateUrl coming soon.
+
 
 ## License
 
