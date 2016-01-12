@@ -1,14 +1,14 @@
 {
-   "name": "leaflet-angular-control",
+   "name": "leaflet-control-angular",
    "label": {
-      "en": "leaflet-angular-control"
+      "en": "leaflet-control-angular"
    },
    "language": "JavaScript",
-   "version": "0.0.3",
+   "version": "0.0.1",
    "description": "Allows for the use of AngularJS in custom leaflet controls",
    "repository": {
       "type": "git",
-      "url": "git@github.com:grantHarris/L.AngularControl.git"
+      "url": "git@github.com:grantHarris/leaflet-control-angular.git"
    },
    "license": "MIT",
    "keywords": [
@@ -24,7 +24,7 @@
    },
    "repository": {
       "type": "git",
-      "url": "https://github.com/grantHarris/L.AngularControl"
+      "url": "https://github.com/grantHarris/leaflet-control-angular"
    },
    "devDependencies": {
    }
