@@ -1,9 +1,9 @@
-# Leaflet Angular Control
+# Leaflet Control Angular
 
-Leaflet Angular Control alows for the use of AngularJS in custom Leaflet controls.
+Leaflet Control Angular alows for the use of AngularJS in custom Leaflet controls.
 
 ## Install
-Run `npm i leaflet-control-angular`
+`npm i leaflet-control-angular`
 
 ## Examples
 
