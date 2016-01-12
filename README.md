@@ -7,7 +7,7 @@ Leaflet Control Angular alows for the use of AngularJS in custom Leaflet control
 
 ## Examples
 
-Working [example](http://grantharris.github.io/L.AngularControl/examples/example.html). Also see the `examples` directory.
+Working [example](http://grantharris.github.io/leaflet-control-angular/examples/example.html). Also see the `examples` directory.
 
 ## TODO
 
