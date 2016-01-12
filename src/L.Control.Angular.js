@@ -1,6 +1,6 @@
  'use strict';
 
- L.AngularControl = L.Control.extend({
+ L.Control.Angular = L.Control.extend({
     options: {
          position: 'bottomleft',
          template: ''
@@ -46,6 +46,6 @@
      }
  });
 
- L.angularControl = function(options) {
-     return new L.AngularControl(options);
+ L.control.angular = function(options) {
+     return new L.Control.Angular(options);
  };

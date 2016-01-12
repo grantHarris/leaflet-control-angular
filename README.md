@@ -1,6 +1,6 @@
-# L.AngularControl
+# Leaflet Angular Control
 
-Leaflet Angular Control allows the insertion of Angularized HTML code into your Leaflet map as a Leaflet control.
+Leaflet Angular Control alows for the use of AngularJS in custom Leaflet controls.
 
 
 ## Examples
