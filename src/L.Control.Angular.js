@@ -1,6 +1,6 @@
  'use strict';
 
- L.AngularControl = L.Control.extend({
+ L.Control.Angular = L.Control.extend({
     options: {
          position: 'bottomleft',
          template: ''
@@ -23,6 +23,7 @@
 
              var link = $compile(element);
 
+             // Controller setup based on ui-router's code https://github.com/angular-ui/ui-router
              if (that.options.controller) {
                  var controller = $controller(that.options.controller, {
                      '$map': map,
@@ -45,6 +46,6 @@
      }
  });
 
- L.angularControl = function(options) {
-     return new L.AngularControl(options);
+ L.control.angular = function(options) {
+     return new L.Control.Angular(options);
  };
