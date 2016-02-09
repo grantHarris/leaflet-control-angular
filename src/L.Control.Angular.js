@@ -5,9 +5,10 @@
          position: 'bottomleft',
          template: ''
      },
-     onAdd: function(map) {
+     onAdd: function onAdd (map) {
          var that = this;
          var container = L.DomUtil.create('div', 'angular-control-leaflet');
+         
          angular.element(document).ready(function() {
              // Grab the injector for the current angular app
              var $injector = angular.element(document).injector();
@@ -21,14 +22,13 @@
              var element = angular.element(container);
              element.html(that.options.template);
 
-             var link = $compile(element);
-
              // Controller setup based on ui-router's code https://github.com/angular-ui/ui-router
              if (that.options.controller) {
                  var controller = $controller(that.options.controller, {
                      '$map': map,
                      '$scope': scope,
-                     '$element': element
+                     '$element': element,
+                     '$options': that.options
                  });
 
                  if (that.options.controllerAs) {
@@ -39,7 +39,7 @@
                  element.children().data('$ngControllerController', controller);
              }
 
-             link(scope);
+             $compile(element)(scope);
              scope.$apply();
          });
          return container;
