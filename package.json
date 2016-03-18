@@ -4,7 +4,7 @@
       "en": "leaflet-control-angular"
    },
    "language": "JavaScript",
-   "version": "0.0.3",
+   "version": "0.0.4",
    "description": "Allows for the use of AngularJS in custom leaflet controls",
    "repository": {
       "type": "git",

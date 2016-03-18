@@ -1,6 +1,9 @@
 leaflet-angular-control Changelog
 =================
 
+## 0.0.4 (2016-03-18)
+Fixed a bug where the Angular scope was not being destroyed on the removal of the control from the map.
+
 ## 0.0.3 (2016-02-23)
 
 ### Improvements

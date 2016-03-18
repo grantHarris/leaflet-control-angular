@@ -17,7 +17,7 @@
                  $compile = $injector.get('$compile'),
                  $controller = $injector.get('$controller');
 
-             var scope = $rootScope.$new(true);
+             that._scope = $rootScope.$new(true);
 
              var element = angular.element(container);
              element.html(that.options.template);
@@ -26,23 +26,28 @@
              if (that.options.controller) {
                  var controller = $controller(that.options.controller, {
                      '$map': map,
-                     '$scope': scope,
+                     '$scope': that._scope,
                      '$element': element,
                      '$options': that.options
                  });
 
                  if (that.options.controllerAs) {
-                     scope[that.options.controllerAs] = controller;
+                     that._scope[that.options.controllerAs] = controller;
                  }
 
                  element.data('$ngControllerController', controller);
                  element.children().data('$ngControllerController', controller);
              }
 
-             $compile(element)(scope);
-             scope.$apply();
+             $compile(element)(that._scope);
+             that._scope.$apply();
          });
          return container;
+     },
+     onRemove: function(){
+        if(this._scope){
+            this._scope.$destroy();
+        }
      }
  });
 
