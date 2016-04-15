@@ -7,7 +7,11 @@
      },
      onAdd: function onAdd (map) {
          var that = this;
-         var container = L.DomUtil.create('div', 'angular-control-leaflet');
+         this._container = L.DomUtil.create('div', 'angular-control-leaflet');
+         
+         L.DomEvent
+            .on(this._container, 'dblclick', L.DomEvent.stop)
+            .on(this._container, 'click', L.DomEvent.stop);
          
          angular.element(document).ready(function() {
              // Grab the injector for the current angular app
@@ -19,10 +23,9 @@
 
              that._scope = $rootScope.$new(true);
 
-             var element = angular.element(container);
+             var element = angular.element(that._container);
              element.html(that.options.template);
 
-             // Controller setup based on ui-router's code https://github.com/angular-ui/ui-router
              if (that.options.controller) {
                  var controller = $controller(that.options.controller, {
                      '$map': map,
@@ -42,12 +45,16 @@
              $compile(element)(that._scope);
              that._scope.$apply();
          });
-         return container;
+         return this._container;
      },
      onRemove: function(){
         if(this._scope){
             this._scope.$destroy();
         }
+        
+        L.DomEvent
+            .off(this._container, 'dblclick', L.DomEvent.stop)
+            .off(this._container, 'click', L.DomEvent.stop);
      }
  });
 

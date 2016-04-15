@@ -1,6 +1,9 @@
 leaflet-angular-control Changelog
 =================
 
+## 0.1.0 (2016-04-15)
+Stop click propagation to the map.
+
 ## 0.0.4 (2016-03-18)
 Fixed a bug where the Angular scope was not being destroyed on the removal of the control from the map.
 
