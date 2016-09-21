@@ -4,8 +4,8 @@
       "en": "leaflet-control-angular"
    },
    "language": "JavaScript",
-   "version": "0.1.0",
-   "description": "Allows for the use of AngularJS in custom leaflet controls",
+   "version": "0.1.1",
+   "description": "Allows for the use of AngularJS in custom leaflet controls.",
    "repository": {
       "type": "git",
       "url": "git@github.com:grantHarris/leaflet-control-angular.git"
@@ -20,7 +20,7 @@
    "main": "src/L.Control.Angular.js",
    "dependencies": {
       "leaflet": "*",
-      "angular": "*"
+      "angular": "^1.5.0"
    },
    "repository": {
       "type": "git",
