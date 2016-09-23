@@ -1,6 +1,6 @@
 {
   "name": "leaflet-control-angular",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Allows for the use of AngularJS in custom leaflet controls.",
   "dependencies": {
     "angular": "^1",
