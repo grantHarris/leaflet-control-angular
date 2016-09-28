@@ -14,8 +14,16 @@
             .on(this._container, 'click', L.DomEvent.stop);
          
          angular.element(document).ready(function() {
-             // Grab the injector for the current angular app
-             var $injector = angular.element(document.querySelectorAll('[ng-app]')).injector();
+             
+             var $injector = angular.element(document).injector();
+
+             if (!$injector) {
+                 $injector = angular.element(document.querySelectorAll('[ng-app]')).injector();
+             }
+
+             if (!$injector) {
+                 throw "L.Control.Angular can't find your Angular app";
+             }
 
              var $rootScope = $injector.get('$rootScope'),
                  $compile = $injector.get('$compile'),

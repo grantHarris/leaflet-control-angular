@@ -1,6 +1,10 @@
 leaflet-angular-control Changelog
 =================
 
+## 0.1.3
+- Better injector support. Directive as well as JavaScript based.
+- Updated example
+
 ## 0.1.2
 - Fixed issue where the app wasn't selecting the injector properly.
 
