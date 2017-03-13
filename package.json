@@ -19,8 +19,8 @@
    ],
    "main": "src/L.Control.Angular.js",
    "dependencies": {
-      "leaflet": "^0.7.7",
-      "angular": "^1.5.0"
+      "angular": "~1.5.0",
+      "leaflet": "~0.7.7"
    },
    "repository": {
       "type": "git",
