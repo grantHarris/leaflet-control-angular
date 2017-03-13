@@ -8,13 +8,16 @@
      onAdd: function onAdd (map) {
          var that = this;
          this._container = L.DomUtil.create('div', 'angular-control-leaflet');
-         
-         L.DomEvent
-            .on(this._container, 'dblclick', L.DomEvent.stop)
-            .on(this._container, 'click', L.DomEvent.stop);
+
+         if (!L.Browser.touch) {
+             L.DomEvent
+               .disableClickPropagation(this._container)
+               .disableScrollPropagation(this._container);
+         } else {
+             L.DomEvent.disableClickPropagation(this._container);
+         }
          
          angular.element(document).ready(function() {
-             
              var $injector = angular.element(document).injector();
 
              if (!$injector) {
@@ -59,10 +62,6 @@
         if(this._scope){
             this._scope.$destroy();
         }
-        
-        L.DomEvent
-            .off(this._container, 'dblclick', L.DomEvent.stop)
-            .off(this._container, 'click', L.DomEvent.stop);
      }
  });
 
