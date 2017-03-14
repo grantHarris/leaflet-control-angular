@@ -1,6 +1,10 @@
 leaflet-angular-control Changelog
 =================
 
+## 0.1.4
+- Fixed bug preventing click events from reaching the document.
+- Disables propagation of click and scroll events to the map.
+
 ## 0.1.3
 - Better injector support. Directive as well as JavaScript based.
 - Updated example
