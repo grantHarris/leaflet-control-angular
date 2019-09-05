@@ -8,7 +8,7 @@
    "description": "Allows for the use of AngularJS in custom leaflet controls.",
    "repository": {
       "type": "git",
-      "url": "git@github.com:grantHarris/leaflet-control-angular.git"
+      "url": "https://github.com/grantHarris/leaflet-control-angular"
    },
    "license": "MIT",
    "keywords": [
@@ -19,13 +19,8 @@
    ],
    "main": "src/L.Control.Angular.js",
    "dependencies": {
-      "angular": "~1.5.0",
-      "leaflet": "~0.7.7"
+      "angular": "^1.6.0",
+      "leaflet": "^0.7.7"
    },
-   "repository": {
-      "type": "git",
-      "url": "https://github.com/grantHarris/leaflet-control-angular"
-   },
-   "devDependencies": {
-   }
+   "devDependencies": {}
 }
